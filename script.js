@@ -12,10 +12,10 @@ function convertToRoman(num) {
   //your code here
 	let result = "";
 
-	for(let temp of obj){
-		while (num >= obj[temp][1]) {
-			result= result + obj[temp][0];
-			num = num -obj[temp][1];
+	for(let i =0; i < obj.length; i++ ){
+		while (num >= obj[i][1]) {
+			result += obj[i][0];
+			num = num -obj[i][1];
 		}
 	}
 	return result;
