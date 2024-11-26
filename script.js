@@ -9,20 +9,18 @@ function convertToRoman(num) {
       6:['I', 1]
     };
 
-	  let result = "";
+		    let result = "";
 
-    // Loop through the object array
-    for (let i = 0; i < obj.length; i++) {
+    // Loop over the obj and process the Roman numerals
+    for (let i = 0; i < 7; i++) {
         // While num is greater than or equal to the value of the current Roman numeral
         while (num >= obj[i][1]) {
             result += obj[i][0]; // Append the Roman numeral symbol to the result
-            num -= obj[i][1];   // Subtract the value from num
+            num -= obj[i][1];    // Subtract the value from num
         }
     }
 
     return result;
-
-
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
